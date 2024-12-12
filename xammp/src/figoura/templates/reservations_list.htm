@@ -1,0 +1,2544 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-list"   
+			data-panel-bg
+		>
+	{BEGIN body}
+		<style>
+		{$containerCss}
+		</style>
+		<div class="r-vbar-page">
+			<div data-width="250px" data-fixed class="r-left clearfix {$leftbar_class}" >
+								<div data-location="left" id="form_left_{$pageid}" data-makeup="leftbar" {$form_left} data-pageid="{$pageid}">
+{BEGIN left_block}
+ 
+     
+         
+
+			<div data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell class="clearfix " data-itemid="logo" {$item_logo}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo" {$item_logo} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</div>
+		
+ 
+
+			<div class="clearfix " data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell data-itemid="expand_button" {$item_expand_button} data-topcell-item-type="expand_button" >
+				<span data-itemtype="expand_button" data-itemid="expand_button" {$item_expand_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Επεκτείνουν" class="btn btn-link   
+	" href="#" >
+					<span class="glyphicon glyphicon-triangle-right"></span>
+										</a>
+</span>
+			</div>
+		
+     
+     
+         
+
+			<div class="clearfix  r-ori-vert" data-cellId="left_c1" data-pageid="{$pageid}" data-itemid="search_panel" {$item_search_panel} data-topcell-item-type="search_panel" >
+				<!-- Begin Search panel content -->
+<div class="searchOptions panel panel-primary searchPanelContainer " {$srchOpt_attrs} data-itemtype="search_panel" data-itemid="search_panel" {$item_search_panel} data-pageid="{$pageid}"	 >
+	<div class="panel-body controlsBlock" {$bottomSearchButt_attrs} >
+
+
+																		{BEGIN searchCtrlBlock_comments}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_comments}" {$filterRow_attrs_comments}>
+			<label>{$label reservations comments }</label>
+
+			
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_comments}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_comments}</span>
+						</div>
+		{END searchCtrlBlock_comments}
+																{BEGIN searchCtrlBlock_displayName}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_displayName}" {$filterRow_attrs_displayName}>
+			<label>{$label reservations displayName }</label>
+
+			
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_displayName}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_displayName}</span>
+						</div>
+		{END searchCtrlBlock_displayName}
+																{BEGIN searchCtrlBlock_changesCount}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_changesCount}" {$filterRow_attrs_changesCount}>
+			<label>{$label reservations changesCount }</label>
+
+			
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_changesCount}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_changesCount}</span>
+						</div>
+		{END searchCtrlBlock_changesCount}
+																{BEGIN searchCtrlBlock_updatedAt}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_updatedAt}" {$filterRow_attrs_updatedAt}>
+			<label>{$label reservations updatedAt }</label>
+
+			
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_updatedAt}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_updatedAt}</span>
+						</div>
+		{END searchCtrlBlock_updatedAt}
+																{BEGIN searchCtrlBlock_createdAt}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_createdAt}" {$filterRow_attrs_createdAt}>
+			<label>{$label reservations createdAt }</label>
+
+			
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_createdAt}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_createdAt}</span>
+						</div>
+		{END searchCtrlBlock_createdAt}
+																{BEGIN searchCtrlBlock_rsvStatus}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_rsvStatus}" {$filterRow_attrs_rsvStatus}>
+			<label>{$label reservations rsvStatus }</label>
+
+			
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_rsvStatus}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_rsvStatus}</span>
+						</div>
+		{END searchCtrlBlock_rsvStatus}
+																{BEGIN searchCtrlBlock_rsvTime}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_rsvTime}" {$filterRow_attrs_rsvTime}>
+			<label>{$label reservations rsvTime }</label>
+
+			
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_rsvTime}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_rsvTime}</span>
+						</div>
+		{END searchCtrlBlock_rsvTime}
+																{BEGIN searchCtrlBlock_rsvDate}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_rsvDate}" {$filterRow_attrs_rsvDate}>
+			<label>{$label reservations rsvDate }</label>
+
+			
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_rsvDate}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_rsvDate}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_rsvDate}</span>
+						</div>
+		{END searchCtrlBlock_rsvDate}
+																{BEGIN searchCtrlBlock_treatmentId}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_treatmentId}" {$filterRow_attrs_treatmentId}>
+			<label>{$label reservations treatmentId }</label>
+
+			
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_treatmentId}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_treatmentId}</span>
+						</div>
+		{END searchCtrlBlock_treatmentId}
+																{BEGIN searchCtrlBlock_locationId}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_locationId}" {$filterRow_attrs_locationId}>
+			<label>{$label reservations locationId }</label>
+
+			
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_locationId}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_locationId}</span>
+						</div>
+		{END searchCtrlBlock_locationId}
+																{BEGIN searchCtrlBlock_zipcode}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_zipcode}" {$filterRow_attrs_zipcode}>
+			<label>{$label reservations zipcode }</label>
+
+			
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_zipcode}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_zipcode}</span>
+						</div>
+		{END searchCtrlBlock_zipcode}
+																{BEGIN searchCtrlBlock_mobile}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_mobile}" {$filterRow_attrs_mobile}>
+			<label>{$label reservations mobile }</label>
+
+			
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_mobile}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_mobile}</span>
+						</div>
+		{END searchCtrlBlock_mobile}
+																{BEGIN searchCtrlBlock_phone}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_phone}" {$filterRow_attrs_phone}>
+			<label>{$label reservations phone }</label>
+
+			
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_phone}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_phone}</span>
+						</div>
+		{END searchCtrlBlock_phone}
+																{BEGIN searchCtrlBlock_lastname}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_lastname}" {$filterRow_attrs_lastname}>
+			<label>{$label reservations lastname }</label>
+
+			
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_lastname}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_lastname}</span>
+						</div>
+		{END searchCtrlBlock_lastname}
+																{BEGIN searchCtrlBlock_firstname}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_firstname}" {$filterRow_attrs_firstname}>
+			<label>{$label reservations firstname }</label>
+
+			
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_firstname}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_firstname}</span>
+						</div>
+		{END searchCtrlBlock_firstname}
+																{BEGIN searchCtrlBlock_reservation_id}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_reservation_id}" {$filterRow_attrs_reservation_id}>
+			<label>{$label reservations reservation_id }</label>
+
+			
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_reservation_id}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_reservation_id}</span>
+						</div>
+		{END searchCtrlBlock_reservation_id}
+		
+
+	</div>
+
+	<div class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}>
+		<button class="btn btn-primary btn-sm" id="searchButton{$id}" {$searchbutton_attrs}>Εύρεση</button>
+
+				<button class="btn btn-default btn-sm" {$showAllCont_attrs} {$showallbutton_attrs}>Επαναφορά</button>
+	</div>
+</div>
+<!-- End Search panel content -->
+			</div>
+		
+    {END left_block}
+</div>				</div>
+			<div class="r-content-col" data-resize-left="leftbar">
+				<div  class="r-topheader" data-resize-name="topbar">
+									{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="leftbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span class="navbar-form  navbar-header" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="expand_menu_button" {$item_expand_menu_button} data-topcell-item-type="expand_menu_button" >
+				<span data-itemtype="expand_menu_button" data-itemid="expand_menu_button" {$item_expand_menu_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Εμφάνιση μενού" class="btn-link   
+	 glyphicon glyphicon-menu-hamburger" href="#" >		
+				
+								</a>
+</span>
+			</span>
+		 
+				<span class="navbar-form  navbar-collapse" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="collapse_button" {$item_collapse_button} data-topcell-item-type="collapse_button" >
+				<span data-itemtype="collapse_button" data-itemid="collapse_button" {$item_collapse_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Κρύβουν" class="btn-link   
+	 glyphicon glyphicon-triangle-left" href="#" >		
+				
+								</a>
+</span>
+			</span>
+		 
+				<span data-cellId="supertop_c1" data-pageid="{$pageid}" class=" navbar-collapse" data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{BEGIN menuitems_main}
+<ul data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}"	class="r-menu nav navbar-nav" 
+	data-menulevel="1"
+>
+
+{BEGIN item_children1}
+<li class="
+	{BEGIN item_haschildren2} dropdown {END item_haschildren2} 
+	{$item_current}">
+<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-h data-menu-top >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren2}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon glyphicon glyphicon-triangle-bottom"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren2}
+	</span>
+	</a>
+{BEGIN item_showchildren2}
+<ul class="
+			dropdown-menu
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="2">
+	{BEGIN item_children2}
+		{BEGIN item_menulink2}
+		<li class="
+						{BEGIN item_haschildren2} dropdown {END item_haschildren2}
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-h >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren2}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon glyphicon glyphicon-triangle-right"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren2}
+	</span>
+	</a>
+			{BEGIN item_showchildren3}
+<ul class="
+			dropdown-menu
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="3">
+	{BEGIN item_children3}
+		{BEGIN item_menulink3}
+		<li class="
+						{BEGIN item_haschildren3} dropdown {END item_haschildren3}
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-h >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren3}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon glyphicon glyphicon-triangle-right"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren3}
+	</span>
+	</a>
+			{BEGIN item_showchildren4}
+<ul class="
+			dropdown-menu
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="4">
+	{BEGIN item_children4}
+		{BEGIN item_menulink4}
+		<li class="
+						{BEGIN item_haschildren4} dropdown {END item_haschildren4}
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-h >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren4}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon glyphicon glyphicon-triangle-right"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren4}
+	</span>
+	</a>
+			{BEGIN item_showchildren5}
+<ul class="
+			dropdown-menu
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="5">
+	{BEGIN item_children5}
+		{BEGIN item_menulink5}
+		<li class="
+						{BEGIN item_haschildren5} dropdown {END item_haschildren5}
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-h >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren5}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon glyphicon glyphicon-triangle-right"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren5}
+	</span>
+	</a>
+					</li>
+		{END item_menulink5}
+	{END item_children5}
+</ul>
+{END item_showchildren5}
+		</li>
+		{END item_menulink4}
+	{END item_children4}
+</ul>
+{END item_showchildren4}
+		</li>
+		{END item_menulink3}
+	{END item_children3}
+</ul>
+{END item_showchildren3}
+		</li>
+		{END item_menulink2}
+	{END item_children2}
+</ul>
+{END item_showchildren2}
+</li>
+{END item_children1}
+</ul>
+{END menuitems_main}
+			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="simple_search" {$item_simple_search} data-topcell-item-type="simple_search" >
+				<span data-itemtype="simple_search" data-itemid="simple_search" {$item_simple_search} data-pageid="{$pageid}" class="form-group">
+
+<div  class="input-group">
+{BEGIN searchform_text}
+	<input type="search" class="form-control" {$searchfor_attrs} size="25">
+{END searchform_text}
+	<span class="input-group-btn">
+	{BEGIN searchform_showall}
+				<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="Επαναφορά">
+			<span class="glyphicon glyphicon-remove"></span>
+		</button>
+	{END searchform_showall}
+
+	{BEGIN searchform_search}
+	<button {$searchbutton_attrs} class="btn btn-primary" >
+		<span class="glyphicon glyphicon-search"></span>
+	</button>
+	{END searchform_search}
+	</span>
+</div>
+		
+</span>			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="list_options" {$item_list_options} data-topcell-item-type="list_options" >
+				<span data-itemtype="list_options" data-itemid="list_options" {$item_list_options} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-cog"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN exportselected_link}
+	<li data-itemtype="export_selected" data-itemid="export_selected" {$item_export_selected} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$exportselectedlink_attrs} {$exportselectedlink_span}  title="" >
+				
+		Εξαγωγή		
+		</a>
+	</li>
+{END exportselected_link}
+							{BEGIN deleteselected_link}
+	<li data-itemtype="delete_selected" data-itemid="delete_selected" {$item_delete_selected} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$deleteselectedlink_attrs} {$deleteselectedlink_span}  title="" >
+				
+		Διαγραφή		
+		</a>
+	</li>
+{END deleteselected_link}
+							<li role="separator" class="divider"></li>							<li role="separator" class="divider"></li>							<li role="separator" class="divider"></li>								<li data-itemtype="advsearch_link" data-itemid="advsearch_link" {$item_advsearch_link} data-pageid="{$pageid}" data-small >
+				<a   href="reservations_search.php{$stateLink_full}" {$advsearchlink_attrs}  title="" >
+				
+		Εύρεση		
+		</a>
+	</li>
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="show_search_panel" data-itemid="show_search_panel" {$item_show_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="showOptPanel{$id}"  title="" >
+				
+		Εμφάνιση πάνελ αναζήτησης		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="hide_search_panel" data-itemid="hide_search_panel" {$item_hide_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="hideOptPanel{$id}"  title="" >
+				
+		Απόκρυψη πάνελ αναζήτησης		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							<li role="separator" class="divider"></li>							{BEGIN export_link}
+	<li data-itemtype="export" data-itemid="export" {$item_export} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$exportlink_attrs}  title="" >
+				
+		Εξαγωγή		
+		</a>
+	</li>
+{END export_link}
+							<li role="separator" class="divider"></li>							{BEGIN import_link}
+	<li data-itemtype="import" data-itemid="import" {$item_import} data-pageid="{$pageid}" data-small >
+				<a  {$importlink_attrs} href="reservations_import.php{$stateLink_full}"  title="" >
+				
+		Εισαγωγή Αρχείου		
+		</a>
+	</li>
+{END import_link}
+					</ul>
+	</span>
+</span>
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							Είσοδος			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+			{BEGIN userbutton_icon}							<span class="glyphicon glyphicon-user"></span>
+						{END userbutton_icon}{$userbutton_image}			{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN userinfo_link}
+	<li data-itemtype="userinfo_link" data-itemid="userinfo_link" {$item_userinfo_link} data-pageid="{$pageid}" data-small >
+				<a  href="userinfo.php"  title="" >
+				
+		Προφίλ χρήστη		
+		</a>
+	</li>
+{END userinfo_link}
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		Έξοδος		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN adminarea_link}
+	<li data-itemtype="adminarea_link" data-itemid="adminarea_link" {$item_adminarea_link} data-pageid="{$pageid}" data-small >
+				<a  href="admin_rights_list.php"  title="" >
+				
+		Περιοχή Διαχειριστή		
+		</a>
+	</li>
+{END adminarea_link}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+						{$locking}
+				</div>
+				<div class="r-body" data-resize-top="topbar" data-body-width="standard">
+					{$header}
+					<div class="r-top">
+									{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="leftbar" {$form_top} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="top_c3" data-pageid="{$pageid}"	{$cell_top_c3}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		{BEGIN mastertable_block}
+<div data-itemtype="master_info" data-itemid="master_info" {$item_master_info} data-pageid="{$pageid}">
+	{$showmasterfile}
+</div>
+{END mastertable_block}		</div>					</div>
+			</div>		
+{END top_block}
+						</div>
+											<div class="r-grid"
+			data-responsive
+	>
+	{BEGIN grid_tabs}
+  <ul class="nav nav-tabs bsgrid_tabs">
+	{$grid_tabs_content}
+  </ul>
+{END grid_tabs}
+	<div class="panel panel-default"
+	>
+		<div class="panel-heading">
+							{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="leftbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class="			col-md-6
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		{BEGIN add_link}
+<span data-itemtype="add" data-itemid="add" {$item_add} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$addlink_attrs} href="reservations_add.php{$stateLink_full}" >
+							Εισαγωγή			</a>
+</span>
+{END add_link}
+	 
+		{BEGIN deleteselected_link}
+<span data-itemtype="delete" data-itemid="delete" {$item_delete} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$deleteselectedlink_attrs} {$deleteselectedlink_span} disabled >
+							Διαγραφή			</a>
+</span>
+{END deleteselected_link}
+	 
+		{BEGIN updateselected_link}
+<span data-itemtype="update_selected" data-itemid="update_selected" {$item_update_selected} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" href="reservations_edit.php{$stateLink_full}" {$updateselectedlink_attrs} disabled >
+							Ενημέρωση των επιλεγμένων			</a>
+</span>
+{END updateselected_link}
+			{END firstAboveGridCell}	
+	</div>			 
+				<div 
+	data-cellId="above-grid_c2" data-pageid="{$pageid}"	{$cell_above-grid_c2}
+	class="r-align-right			col-md-6
+	
+">
+		 
+		<span data-itemtype="details_found" data-itemid="details_found" {$item_details_found} data-pageid="{$pageid}" data-small >
+{$mlp_push}{$mlparam first var first_shown}{$mlparam last var last_shown}{$mlparam total var records_found}{mlang_message DISPLAYING}{$mlp_pop}</span>	 
+		<span data-itemtype="page_size" data-itemid="page_size" {$item_page_size} data-pageid="{$pageid}" >
+		{$recsPerPage}
+</span>	 
+		{BEGIN print_friendly}
+<span id="printpanelblock{$id}"  data-pageid="{$pageid}" {$printpanel_hiddenattr} data-itemtype="print_panel" data-itemid="print_panel" {$item_print_panel} data-pageid="{$pageid}">
+	<button title="Εκτυπώσιμη σελίδα" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					<span class="glyphicon glyphicon-print"></span>
+				<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu pull-right">
+										 
+				 
+					<li class="container-fluid 
+										">
+									<div id="print_friendly_scope{$id}">
+	<div class="row">
+		<div class="col-md-4">
+			Scope:		</div>
+
+			 
+		{BEGIN print_friendly_all}
+		<div class="col-md-8">
+			<label for="printAll{$id}">
+				<input type="radio" id="printAll{$id}" data-href="reservations_print.php?all=1&amp;{$crosstable_attrs}" name="printScope" >
+									Εκτύπωση όλων των σελίδων`							</label>
+		</div>
+		{END print_friendly_all}
+		</div>
+		<div class="row">
+		<div class="col-md-4">&nbsp;</div>
+		<div class="col-md-8">
+			<label for="printPage{$id}">
+				<input name="printScope" id="printPage{$id}" type="radio" checked data-href="reservations_print.php?{$crosstable_attrs}">
+				Εκτύπωση αυτής της σελίδας			</label>
+		</div>
+	</div>
+		
+		 
+	<div class="row">
+		<div class="col-md-4">
+			&nbsp;
+		</div>
+		<div class="col-md-8">
+			<label style="color: gray;" for="printSelection{$id}">
+			<input name="printScope" disabled="disabled" id="printSelection{$id}" type="radio" >
+			Εκτύπωση επιλεγμένων`			</label>
+		</div>
+	</div>
+	</div>
+				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+										">
+									{BEGIN print_details}
+<div>
+	<label for="printDetailsToggler{$id}">
+		<input type="checkbox" id="printDetailsToggler{$id}">
+		Εκτύπωση λεπτομερειών`	</label>
+	<div  id="printdetailstables{$id}" style="display:none;">
+											{BEGIN print_details_statushistory}
+			<div>
+				<label for="printDetailsstatushistory{$id}">
+					<input type="checkbox" value="statushistory" id="printDetailsstatushistory{$id}" checked>
+					Statushistory				</label>
+			</div>
+			{END print_details_statushistory}
+						</div>
+</div>
+{END print_details}
+				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+										">
+									<div>
+	<label for="printPerPage{$id}">
+					Εγγραφές/σελίδα							
+	</label>
+	<input type="number" id="printPerPage{$id}" value="{$print_recspp}" class="rnr-printrecspp">		
+</div>
+				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+					 text-center 					">
+									<span data-itemtype="print_button" data-itemid="print_button" {$item_print_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" id="print_friendly_button{$id}" >
+							Εκτύπωση			</a>
+</span>
+				 
+					</li>
+															</ul>
+</span>
+{END print_friendly}
+	 
+		<div id="fildhidepanel{$id}" class="bs-fildhidepanel 
+		 reorder	keep-open btn-group"
+	data-itemtype="columns_control" data-itemid="columns_control" {$item_columns_control} data-pageid="{$pageid}"	title="Εμφάνιση/Απόκρυψη στηλών"
+	>
+	<button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button"><i class="glyphicon glyphicon-th-list"></i> <span class="caret"></span></button>
+	<ul role="menu" class="dropdown-menu dropdown-left">
+							<li>
+		<a>
+						<span data-field="locationId" data-fieldname="locationId">{$label reservations locationId }</span>
+					</a>
+		</li>
+							<li>
+		<a>
+						<span data-field="reservation_id" data-fieldname="reservation_id">{$label reservations reservation_id }</span>
+					</a>
+		</li>
+							<li>
+		<a>
+						<span data-field="firstname" data-fieldname="firstname">{$label reservations firstname }</span>
+					</a>
+		</li>
+							<li>
+		<a>
+						<span data-field="lastname" data-fieldname="lastname">{$label reservations lastname }</span>
+					</a>
+		</li>
+							<li>
+		<a>
+						<span data-field="phone" data-fieldname="phone">{$label reservations phone }</span>
+					</a>
+		</li>
+							<li>
+		<a>
+						<span data-field="mobile" data-fieldname="mobile">{$label reservations mobile }</span>
+					</a>
+		</li>
+							<li>
+		<a>
+						<span data-field="zipcode" data-fieldname="zipcode">{$label reservations zipcode }</span>
+					</a>
+		</li>
+							<li>
+		<a>
+						<span data-field="comments" data-fieldname="comments">{$label reservations comments }</span>
+					</a>
+		</li>
+							<li>
+		<a>
+						<span data-field="treatmentId" data-fieldname="treatmentId">{$label reservations treatmentId }</span>
+					</a>
+		</li>
+							<li>
+		<a>
+						<span data-field="rsvDate" data-fieldname="rsvDate">{$label reservations rsvDate }</span>
+					</a>
+		</li>
+							<li>
+		<a>
+						<span data-field="rsvTime" data-fieldname="rsvTime">{$label reservations rsvTime }</span>
+					</a>
+		</li>
+							<li>
+		<a>
+						<span data-field="rsvStatus" data-fieldname="rsvStatus">{$label reservations rsvStatus }</span>
+					</a>
+		</li>
+							<li>
+		<a>
+						<span data-field="createdAt" data-fieldname="createdAt">{$label reservations createdAt }</span>
+					</a>
+		</li>
+							<li>
+		<a>
+						<span data-field="updatedAt" data-fieldname="updatedAt">{$label reservations updatedAt }</span>
+					</a>
+		</li>
+							<li>
+		<a>
+						<span data-field="changesCount" data-fieldname="changesCount">{$label reservations changesCount }</span>
+					</a>
+		</li>
+							<li>
+		<a>
+						<span data-field="displayName" data-fieldname="displayName">{$label reservations displayName }</span>
+					</a>
+		</li>
+			</ul>
+</div>
+		</div>					</div>
+			 
+				<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c" data-pageid="{$pageid}"	{$cell_above-grid_c}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		<div data-itemtype="filter_panel" data-itemid="filter_panel" {$item_filter_panel} data-pageid="{$pageid}">
+	<div class="filterPanelContainer {$filterPanelStateClass}" 
+					data-horizontal
+			>
+	<!-- Begin Filter panel content -->
+
+
+
+
+
+
+{BEGIN filter_control_locationId}
+
+	<div class="dropdown filter-field filter-locationId-container" {BEGIN filter_selected_locationId} data-selected {END filter_selected_locationId}>
+		<div class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+						{BEGIN clearLink_locationId}
+			<a href="#" class="filter-clear filter-clear-locationId" title="Καθαρισμός">
+				<span class="glyphicon glyphicon-remove"></span>
+			</a>
+			{END clearLink_locationId}
+			<span class="r-filter-field">{$label reservations locationId }				{BEGIN filter_selected_locationId}:{END filter_selected_locationId}
+			</span>
+			{BEGIN filter_selected_locationId}
+			<span class="r-filter-value">{$filtervalue_locationId}</span>
+			{END filter_selected_locationId}
+			
+			<span class="caret"></span>
+		</div>
+		<ul class="dropdown-menu">
+					{BEGIN filterCtrlBlock_locationId}
+		<li class=" filter-values filter-values-locationId  {$visibilityClass_locationId}">
+			{$locationId_filter}
+						
+					
+					
+					
+					</li>
+		{END filterCtrlBlock_locationId}
+
+			{BEGIN filter_button_showmore_locationId}
+		<li class=" filter-show-more {$collapsedClass_locationId} {$showMoreBtnClass_locationId}">
+			<a class="filter-show-more-link filterShowMore_locationId" href="#">{$show_n_more_locationId}</a>
+		</li>
+		{END filter_button_showmore_locationId}
+	
+
+
+	
+
+			</ul>
+	</div>
+
+{END filter_control_locationId}
+
+
+
+
+
+
+{BEGIN filter_control_rsvStatus}
+
+	<div class="dropdown filter-field filter-rsvStatus-container" {BEGIN filter_selected_rsvStatus} data-selected {END filter_selected_rsvStatus}>
+		<div class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+							<input class="filter-selectAll-rsvStatus" type="checkbox" name="selectAll" {$selectAll_attrs_rsvStatus} />
+						{BEGIN clearLink_rsvStatus}
+			<a href="#" class="filter-clear filter-clear-rsvStatus" title="Καθαρισμός">
+				<span class="glyphicon glyphicon-remove"></span>
+			</a>
+			{END clearLink_rsvStatus}
+			<span class="r-filter-field">{$label reservations rsvStatus }				{BEGIN filter_selected_rsvStatus}:{END filter_selected_rsvStatus}
+			</span>
+			{BEGIN filter_selected_rsvStatus}
+			<span class="r-filter-value">{$filtervalue_rsvStatus}</span>
+			{END filter_selected_rsvStatus}
+			
+			<span class="caret"></span>
+		</div>
+		<ul class="dropdown-menu">
+					{BEGIN filterCtrlBlock_rsvStatus}
+		<li class=" filter-values filter-values-rsvStatus  {$visibilityClass_rsvStatus}">
+			{$rsvStatus_filter}
+						
+					
+					
+					
+					</li>
+		{END filterCtrlBlock_rsvStatus}
+
+			{BEGIN filter_button_showmore_rsvStatus}
+		<li class=" filter-show-more {$collapsedClass_rsvStatus} {$showMoreBtnClass_rsvStatus}">
+			<a class="filter-show-more-link filterShowMore_rsvStatus" href="#">{$show_n_more_rsvStatus}</a>
+		</li>
+		{END filter_button_showmore_rsvStatus}
+	
+
+
+			{BEGIN filter_button_apply_rsvStatus}
+		<li class="filter-multiselect  filter-field-btn {$collapsedClass_rsvStatus}">
+			<a href="#" class="filter-btn-apply filter-apply-rsvStatus" {$filterbutton_attrs_rsvStatus}>Εφαρμογή</a>
+		</li>
+		{END filter_button_apply_rsvStatus}
+	
+
+			</ul>
+	</div>
+
+{END filter_control_rsvStatus}
+
+
+
+
+
+
+{BEGIN filter_control_rsvDate}
+
+	<div class="dropdown filter-field filter-rsvDate-container" {BEGIN filter_selected_rsvDate} data-selected {END filter_selected_rsvDate}>
+		<div class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+						{BEGIN clearLink_rsvDate}
+			<a href="#" class="filter-clear filter-clear-rsvDate" title="Καθαρισμός">
+				<span class="glyphicon glyphicon-remove"></span>
+			</a>
+			{END clearLink_rsvDate}
+			<span class="r-filter-field">{$label reservations rsvDate }				{BEGIN filter_selected_rsvDate}:{END filter_selected_rsvDate}
+			</span>
+			{BEGIN filter_selected_rsvDate}
+			<span class="r-filter-value">{$filtervalue_rsvDate}</span>
+			{END filter_selected_rsvDate}
+			
+			<span class="caret"></span>
+		</div>
+		<ul class="dropdown-menu">
+					{BEGIN filterCtrlBlock_rsvDate}
+		<li class=" filter-values filter-values-rsvDate  {$visibilityClass_rsvDate}">
+			{$rsvDate_filter}
+						
+					
+					
+					
+					</li>
+		{END filterCtrlBlock_rsvDate}
+
+			{BEGIN filter_button_showmore_rsvDate}
+		<li class=" filter-show-more {$collapsedClass_rsvDate} {$showMoreBtnClass_rsvDate}">
+			<a class="filter-show-more-link filterShowMore_rsvDate" href="#">{$show_n_more_rsvDate}</a>
+		</li>
+		{END filter_button_showmore_rsvDate}
+	
+
+
+	
+
+			</ul>
+	</div>
+
+{END filter_control_rsvDate}
+
+
+
+
+
+
+{BEGIN filter_control_treatmentId}
+
+	<div class="dropdown filter-field filter-treatmentId-container" {BEGIN filter_selected_treatmentId} data-selected {END filter_selected_treatmentId}>
+		<div class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+						{BEGIN clearLink_treatmentId}
+			<a href="#" class="filter-clear filter-clear-treatmentId" title="Καθαρισμός">
+				<span class="glyphicon glyphicon-remove"></span>
+			</a>
+			{END clearLink_treatmentId}
+			<span class="r-filter-field">{$label reservations treatmentId }				{BEGIN filter_selected_treatmentId}:{END filter_selected_treatmentId}
+			</span>
+			{BEGIN filter_selected_treatmentId}
+			<span class="r-filter-value">{$filtervalue_treatmentId}</span>
+			{END filter_selected_treatmentId}
+			
+			<span class="caret"></span>
+		</div>
+		<ul class="dropdown-menu">
+					{BEGIN filterCtrlBlock_treatmentId}
+		<li class=" filter-values filter-values-treatmentId  {$visibilityClass_treatmentId}">
+			{$treatmentId_filter}
+						
+					
+					
+					
+					</li>
+		{END filterCtrlBlock_treatmentId}
+
+			{BEGIN filter_button_showmore_treatmentId}
+		<li class=" filter-show-more {$collapsedClass_treatmentId} {$showMoreBtnClass_treatmentId}">
+			<a class="filter-show-more-link filterShowMore_treatmentId" href="#">{$show_n_more_treatmentId}</a>
+		</li>
+		{END filter_button_showmore_treatmentId}
+	
+
+
+	
+
+			</ul>
+	</div>
+
+{END filter_control_treatmentId}
+
+
+
+	<!-- End Filter panel content -->
+	</div>
+</div>		</div>					</div>
+			</div>		
+{END above-grid_block}
+			</div>
+
+					{BEGIN grid_block}
+{BEGIN message_block}
+<div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
+{END message_block}	<style>
+@media screen and (max-width: 767px) {
+		[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="reservation_id"]:before {
+		content: "{$label reservations reservation_id}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="firstname"]:before {
+		content: "{$label reservations firstname}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="lastname"]:before {
+		content: "{$label reservations lastname}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="displayName"]:before {
+		content: "{$label reservations displayName}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="phone"]:before {
+		content: "{$label reservations phone}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="mobile"]:before {
+		content: "{$label reservations mobile}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="zipcode"]:before {
+		content: "{$label reservations zipcode}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="locationId"]:before {
+		content: "{$label reservations locationId}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="treatmentId"]:before {
+		content: "{$label reservations treatmentId}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="rsvDate"]:before {
+		content: "{$label reservations rsvDate}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="rsvTime"]:before {
+		content: "{$label reservations rsvTime}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="rsvStatus"]:before {
+		content: "{$label reservations rsvStatus}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="createdAt"]:before {
+		content: "{$label reservations createdAt}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="updatedAt"]:before {
+		content: "{$label reservations updatedAt}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="comments"]:before {
+		content: "{$label reservations comments}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="changesCount"]:before {
+		content: "{$label reservations changesCount}";
+	}
+	}
+</style>
+<table data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" class=" table table-striped table-hover table-bordered r-horizontal-grid  r-flexgrid rnr-b-grid rnr-gridtable"
+	cellpadding="0"
+	data-body-height="2"
+>
+						<thead>
+			{BEGIN grid_header}
+			
+																														<tr {$rowattrs} {$row_grid_0} class="{$rowclass}
+									{$gridHeader_class}
+					
+								r-gridrow
+							">
+									{BEGIN cellblock_grid_headcell_icons}
+	<th
+	
+	{$cell_grid_headcell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="reservations_list"		data-control-cell
+	
+	>
+
+	
+	</th>
+	{END cellblock_grid_headcell_icons}
+									{BEGIN cellblock_grid_headcell_checkbox}
+	<th
+	
+	{$cell_grid_headcell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="reservations_list"	
+		data-checkbox-cell
+	>
+
+	 
+		{BEGIN checkbox_column}
+<span data-itemtype="grid_checkbox_head" data-itemid="grid_checkbox_head" {$item_grid_checkbox_head} data-pageid="{$pageid}" data-record-id="{$recId}" >
+	<input type="checkbox" {$checkboxheader_attrs}>
+</span>
+{END checkbox_column}
+	
+	</th>
+	{END cellblock_grid_headcell_checkbox}
+									{BEGIN cellblock_grid_headcell_details}
+	<th
+	
+	{$cell_grid_headcell_details}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_details" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</th>
+	{END cellblock_grid_headcell_details}
+									{BEGIN cellblock_grid_headcell_field}
+	<th
+	
+	{$cell_grid_headcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$locationId_class}	"
+
+			data-field="locationId"
+	
+	data-cellId="grid_headcell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN locationId_fieldheadercolumn}
+	{BEGIN locationId_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="locationId" data-fieldname="locationId" 
+
+			{$locationId_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label reservations locationId }</span>
+					{$arrow_icon_locationId}
+			</span>
+	</span>
+	{END locationId_fieldheader}
+{END locationId_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field}
+									{BEGIN cellblock_grid_headcell_field1}
+	<th
+	
+	{$cell_grid_headcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$reservation_id_class}	"
+
+			data-field="reservation_id"
+	
+	data-cellId="grid_headcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN reservation_id_fieldheadercolumn}
+	{BEGIN reservation_id_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field17" {$item_simple_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="reservation_id" data-fieldname="reservation_id" 
+
+			{$reservation_id_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label reservations reservation_id }</span>
+					{$arrow_icon_reservation_id}
+			</span>
+	</span>
+	{END reservation_id_fieldheader}
+{END reservation_id_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field1}
+									{BEGIN cellblock_grid_headcell_field2}
+	<th
+	
+	{$cell_grid_headcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$firstname_class}	"
+
+			data-field="firstname"
+	
+	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN firstname_fieldheadercolumn}
+	{BEGIN firstname_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field18" {$item_simple_grid_field18} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="firstname" data-fieldname="firstname" 
+
+			{$firstname_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label reservations firstname }</span>
+					{$arrow_icon_firstname}
+			</span>
+	</span>
+	{END firstname_fieldheader}
+{END firstname_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field2}
+									{BEGIN cellblock_grid_headcell_field3}
+	<th
+	
+	{$cell_grid_headcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$lastname_class}	"
+
+			data-field="lastname"
+	
+	data-cellId="grid_headcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN lastname_fieldheadercolumn}
+	{BEGIN lastname_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field19" {$item_simple_grid_field19} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="lastname" data-fieldname="lastname" 
+
+			{$lastname_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label reservations lastname }</span>
+					{$arrow_icon_lastname}
+			</span>
+	</span>
+	{END lastname_fieldheader}
+{END lastname_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field3}
+									{BEGIN cellblock_grid_headcell_field4}
+	<th
+	
+	{$cell_grid_headcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$phone_class}	"
+
+			data-field="phone"
+	
+	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN phone_fieldheadercolumn}
+	{BEGIN phone_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field20" {$item_simple_grid_field20} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="phone" data-fieldname="phone" 
+
+			{$phone_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label reservations phone }</span>
+					{$arrow_icon_phone}
+			</span>
+	</span>
+	{END phone_fieldheader}
+{END phone_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field4}
+									{BEGIN cellblock_grid_headcell_field5}
+	<th
+	
+	{$cell_grid_headcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$mobile_class}	"
+
+			data-field="mobile"
+	
+	data-cellId="grid_headcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN mobile_fieldheadercolumn}
+	{BEGIN mobile_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field21" {$item_simple_grid_field21} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="mobile" data-fieldname="mobile" 
+
+			{$mobile_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label reservations mobile }</span>
+					{$arrow_icon_mobile}
+			</span>
+	</span>
+	{END mobile_fieldheader}
+{END mobile_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field5}
+									{BEGIN cellblock_grid_headcell_field6}
+	<th
+	
+	{$cell_grid_headcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$zipcode_class}	"
+
+			data-field="zipcode"
+	
+	data-cellId="grid_headcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN zipcode_fieldheadercolumn}
+	{BEGIN zipcode_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field22" {$item_simple_grid_field22} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="zipcode" data-fieldname="zipcode" 
+
+			{$zipcode_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label reservations zipcode }</span>
+					{$arrow_icon_zipcode}
+			</span>
+	</span>
+	{END zipcode_fieldheader}
+{END zipcode_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field6}
+									{BEGIN cellblock_grid_headcell_field7}
+	<th
+	
+	{$cell_grid_headcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$comments_class}	"
+
+			data-field="comments"
+	
+	data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN comments_fieldheadercolumn}
+	{BEGIN comments_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field23" {$item_simple_grid_field23} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="comments" data-fieldname="comments" 
+
+			{$comments_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label reservations comments }</span>
+					{$arrow_icon_comments}
+			</span>
+	</span>
+	{END comments_fieldheader}
+{END comments_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field7}
+									{BEGIN cellblock_grid_headcell_field8}
+	<th
+	
+	{$cell_grid_headcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$treatmentId_class}	"
+
+			data-field="treatmentId"
+	
+	data-cellId="grid_headcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN treatmentId_fieldheadercolumn}
+	{BEGIN treatmentId_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field24" {$item_simple_grid_field24} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="treatmentId" data-fieldname="treatmentId" 
+
+			{$treatmentId_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label reservations treatmentId }</span>
+					{$arrow_icon_treatmentId}
+			</span>
+	</span>
+	{END treatmentId_fieldheader}
+{END treatmentId_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field8}
+									{BEGIN cellblock_grid_headcell_field9}
+	<th
+	
+	{$cell_grid_headcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$rsvDate_class}	"
+
+			data-field="rsvDate"
+	
+	data-cellId="grid_headcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN rsvDate_fieldheadercolumn}
+	{BEGIN rsvDate_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field25" {$item_simple_grid_field25} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="rsvDate" data-fieldname="rsvDate" 
+
+			{$rsvDate_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label reservations rsvDate }</span>
+					{$arrow_icon_rsvDate}
+			</span>
+	</span>
+	{END rsvDate_fieldheader}
+{END rsvDate_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field9}
+									{BEGIN cellblock_grid_headcell_field10}
+	<th
+	
+	{$cell_grid_headcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$rsvTime_class}	"
+
+			data-field="rsvTime"
+	
+	data-cellId="grid_headcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN rsvTime_fieldheadercolumn}
+	{BEGIN rsvTime_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field26" {$item_simple_grid_field26} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="rsvTime" data-fieldname="rsvTime" 
+
+			{$rsvTime_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label reservations rsvTime }</span>
+					{$arrow_icon_rsvTime}
+			</span>
+	</span>
+	{END rsvTime_fieldheader}
+{END rsvTime_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field10}
+									{BEGIN cellblock_grid_headcell_field11}
+	<th
+	
+	{$cell_grid_headcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$rsvStatus_class}	"
+
+			data-field="rsvStatus"
+	
+	data-cellId="grid_headcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN rsvStatus_fieldheadercolumn}
+	{BEGIN rsvStatus_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field27" {$item_simple_grid_field27} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="rsvStatus" data-fieldname="rsvStatus" 
+
+			{$rsvStatus_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label reservations rsvStatus }</span>
+					{$arrow_icon_rsvStatus}
+			</span>
+	</span>
+	{END rsvStatus_fieldheader}
+{END rsvStatus_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field11}
+									{BEGIN cellblock_grid_headcell_field12}
+	<th
+	
+	{$cell_grid_headcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$createdAt_class}	"
+
+			data-field="createdAt"
+	
+	data-cellId="grid_headcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN createdAt_fieldheadercolumn}
+	{BEGIN createdAt_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field28" {$item_simple_grid_field28} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="createdAt" data-fieldname="createdAt" 
+
+			{$createdAt_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label reservations createdAt }</span>
+					{$arrow_icon_createdAt}
+			</span>
+	</span>
+	{END createdAt_fieldheader}
+{END createdAt_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field12}
+									{BEGIN cellblock_grid_headcell_field13}
+	<th
+	
+	{$cell_grid_headcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$updatedAt_class}	"
+
+			data-field="updatedAt"
+	
+	data-cellId="grid_headcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN updatedAt_fieldheadercolumn}
+	{BEGIN updatedAt_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field29" {$item_simple_grid_field29} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="updatedAt" data-fieldname="updatedAt" 
+
+			{$updatedAt_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label reservations updatedAt }</span>
+					{$arrow_icon_updatedAt}
+			</span>
+	</span>
+	{END updatedAt_fieldheader}
+{END updatedAt_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field13}
+									{BEGIN cellblock_grid_headcell_field14}
+	<th
+	
+	{$cell_grid_headcell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$changesCount_class}	"
+
+			data-field="changesCount"
+	
+	data-cellId="grid_headcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN changesCount_fieldheadercolumn}
+	{BEGIN changesCount_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field30" {$item_simple_grid_field30} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="changesCount" data-fieldname="changesCount" 
+
+			{$changesCount_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label reservations changesCount }</span>
+					{$arrow_icon_changesCount}
+			</span>
+	</span>
+	{END changesCount_fieldheader}
+{END changesCount_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field14}
+									{BEGIN cellblock_grid_headcell_field15}
+	<th
+	
+	{$cell_grid_headcell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$displayName_class}	"
+
+			data-field="displayName"
+	
+	data-cellId="grid_headcell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN displayName_fieldheadercolumn}
+	{BEGIN displayName_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field31" {$item_simple_grid_field31} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="displayName" data-fieldname="displayName" 
+
+			{$displayName_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label reservations displayName }</span>
+					{$arrow_icon_displayName}
+			</span>
+	</span>
+	{END displayName_fieldheader}
+{END displayName_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field15}
+							</tr>
+																				
+					{END grid_header}
+			</thead>
+															<tbody>
+					{BEGIN grid_row}
+							
+																																			<tr {$rowattrs} {$row_grid_1} class="{$rowclass}
+				
+								r-gridrow
+							">
+									{BEGIN cellblock_grid_cell_icons}
+	<td
+	
+	{$cell_grid_cell_icons}
+	{$recordattrs}
+	class="
+					"
+
+	
+	data-cellId="grid_cell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="reservations_list"		data-control-cell
+	
+	>
+
+	 
+		{BEGIN edit_column}
+{BEGIN edit_link}
+<span data-itemtype="grid_edit" data-itemid="grid_edit" {$item_grid_edit} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Επεξεργασία" class="btn-link   
+	 glyphicon glyphicon-pencil" href="reservations_edit.php?{$editlink}" {$editlink_attrs} title="Επεξεργασία" >		
+				
+								</a>
+</span>
+{END edit_link}
+{END edit_column}
+	 
+		{BEGIN copy_column}
+{BEGIN copy_link}
+<span data-itemtype="grid_copy" data-itemid="grid_copy" {$item_grid_copy} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Αντιγραφή" class="btn-link   
+	 glyphicon glyphicon-duplicate" href="reservations_add.php?{$copylink}" {$copylink_attrs} title="Αντιγραφή" >		
+				
+								</a>
+</span>
+{END copy_link}
+{END copy_column}
+	
+	</td>
+	{END cellblock_grid_cell_icons}
+									{BEGIN cellblock_grid_cell_checkbox}
+	<td
+	
+	{$cell_grid_cell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}"		data-control-cell
+	
+		data-checkbox-cell
+	>
+
+	 
+		{BEGIN checkbox_column}
+<span data-itemtype="grid_checkbox" data-itemid="grid_checkbox" {$item_grid_checkbox} data-pageid="{$pageid}" data-record-id="{$recId}" >
+	<input type="checkbox" {$checkbox_attrs}
+		>
+</span>	
+{END checkbox_column}
+	
+	</td>
+	{END cellblock_grid_cell_checkbox}
+									{BEGIN cellblock_grid_cell_details}
+	<td
+	
+	{$cell_grid_cell_details}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_details" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="reservations_list"		data-control-cell
+	
+	>
+
+	 
+		
+		
+	{BEGIN statushistory_dtable_link}
+	<span data-itemtype="grid_details_link" data-itemid="grid_details_link" {$item_grid_details_link} data-pageid="{$pageid}" data-record-id="{$recId}">
+	<a  {$statushistory_link_attrs} data-short-details="statushistory"
+		 
+					>
+						Statushistory		
+									<span {$statushistory_childnumber_attr} dir="ltr">
+					{BEGIN statushistory_childcount}({$statushistory_childnumber}){END statushistory_childcount}
+				</span>
+						</a>
+	</span>
+	{END statushistory_dtable_link}
+
+
+	
+	</td>
+	{END cellblock_grid_cell_details}
+									{BEGIN cellblock_grid_cell_field}
+	<td
+	
+	{$cell_grid_cell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$locationId_class}	"
+
+			data-field="locationId"
+	
+	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN locationId_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="locationId" data-fieldname="locationId" data-default-width >
+{$locationId_value}
+</span>
+{END locationId_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field}
+									{BEGIN cellblock_grid_cell_field1}
+	<td
+	
+	{$cell_grid_cell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$reservation_id_class}	"
+
+			data-field="reservation_id"
+	
+	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN reservation_id_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="reservation_id" data-fieldname="reservation_id" data-default-width >
+{$reservation_id_value}
+</span>
+{END reservation_id_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field1}
+									{BEGIN cellblock_grid_cell_field2}
+	<td
+	
+	{$cell_grid_cell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$firstname_class}	"
+
+			data-field="firstname"
+	
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN firstname_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="firstname" data-fieldname="firstname" data-default-width >
+{$firstname_value}
+</span>
+{END firstname_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field2}
+									{BEGIN cellblock_grid_cell_field3}
+	<td
+	
+	{$cell_grid_cell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$lastname_class}	"
+
+			data-field="lastname"
+	
+	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN lastname_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="lastname" data-fieldname="lastname" data-default-width >
+{$lastname_value}
+</span>
+{END lastname_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field3}
+									{BEGIN cellblock_grid_cell_field4}
+	<td
+	
+	{$cell_grid_cell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$phone_class}	"
+
+			data-field="phone"
+	
+	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN phone_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="phone" data-fieldname="phone" data-default-width >
+{$phone_value}
+</span>
+{END phone_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field4}
+									{BEGIN cellblock_grid_cell_field5}
+	<td
+	
+	{$cell_grid_cell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$mobile_class}	"
+
+			data-field="mobile"
+	
+	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN mobile_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="mobile" data-fieldname="mobile" data-default-width >
+{$mobile_value}
+</span>
+{END mobile_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field5}
+									{BEGIN cellblock_grid_cell_field6}
+	<td
+	
+	{$cell_grid_cell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$zipcode_class}	"
+
+			data-field="zipcode"
+	
+	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN zipcode_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="zipcode" data-fieldname="zipcode" data-default-width >
+{$zipcode_value}
+</span>
+{END zipcode_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field6}
+									{BEGIN cellblock_grid_cell_field7}
+	<td
+	
+	{$cell_grid_cell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$comments_class}	"
+
+			data-field="comments"
+	
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN comments_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="comments" data-fieldname="comments" data-default-width >
+{$comments_value}
+</span>
+{END comments_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field7}
+									{BEGIN cellblock_grid_cell_field8}
+	<td
+	
+	{$cell_grid_cell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$treatmentId_class}	"
+
+			data-field="treatmentId"
+	
+	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN treatmentId_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="treatmentId" data-fieldname="treatmentId" data-default-width >
+{$treatmentId_value}
+</span>
+{END treatmentId_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field8}
+									{BEGIN cellblock_grid_cell_field9}
+	<td
+	
+	{$cell_grid_cell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$rsvDate_class}	"
+
+			data-field="rsvDate"
+	
+	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN rsvDate_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="rsvDate" data-fieldname="rsvDate" data-default-width >
+{$rsvDate_value}
+</span>
+{END rsvDate_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field9}
+									{BEGIN cellblock_grid_cell_field10}
+	<td
+	
+	{$cell_grid_cell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$rsvTime_class}	"
+
+			data-field="rsvTime"
+	
+	data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN rsvTime_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="rsvTime" data-fieldname="rsvTime" data-default-width >
+{$rsvTime_value}
+</span>
+{END rsvTime_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field10}
+									{BEGIN cellblock_grid_cell_field11}
+	<td
+	
+	{$cell_grid_cell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$rsvStatus_class}	"
+
+			data-field="rsvStatus"
+	
+	data-cellId="grid_cell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN rsvStatus_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="rsvStatus" data-fieldname="rsvStatus" data-default-width >
+{$rsvStatus_value}
+</span>
+{END rsvStatus_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field11}
+									{BEGIN cellblock_grid_cell_field12}
+	<td
+	
+	{$cell_grid_cell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$createdAt_class}	"
+
+			data-field="createdAt"
+	
+	data-cellId="grid_cell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN createdAt_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="createdAt" data-fieldname="createdAt" data-default-width >
+{$createdAt_value}
+</span>
+{END createdAt_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field12}
+									{BEGIN cellblock_grid_cell_field13}
+	<td
+	
+	{$cell_grid_cell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$updatedAt_class}	"
+
+			data-field="updatedAt"
+	
+	data-cellId="grid_cell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN updatedAt_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="updatedAt" data-fieldname="updatedAt" data-default-width >
+{$updatedAt_value}
+</span>
+{END updatedAt_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field13}
+									{BEGIN cellblock_grid_cell_field14}
+	<td
+	
+	{$cell_grid_cell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$changesCount_class}	"
+
+			data-field="changesCount"
+	
+	data-cellId="grid_cell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN changesCount_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="changesCount" data-fieldname="changesCount" data-default-width >
+{$changesCount_value}
+</span>
+{END changesCount_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field14}
+									{BEGIN cellblock_grid_cell_field15}
+	<td
+	
+	{$cell_grid_cell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$displayName_class}	"
+
+			data-field="displayName"
+	
+	data-cellId="grid_cell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN displayName_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="displayName" data-fieldname="displayName" data-default-width >
+{$displayName_value}
+</span>
+{END displayName_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field15}
+							</tr>
+											<tr {$rowattrs} {$row_grid_2} class="{$rowclass}
+				
+							">
+									{BEGIN cellblock_grid_cell_dpreview}
+	<td
+	
+	{$cell_grid_cell_dpreview}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_dpreview" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+			<div data-itemtype="details_preview" data-itemid="details_preview" {$item_details_preview} data-pageid="{$pageid}" data-record-id="{$recId}" 
+	data-orders="statushistory"
+			data-details-statushistory	>
+		<span data-details-inside data-short-table="statushistory">
+			</span>
+		<div data-details-preview>
+	</div>
+</div>
+	
+	</td>
+	{END cellblock_grid_cell_dpreview}
+							</tr>
+										
+											{END grid_row}
+					</tbody>
+													<tfoot>
+			
+																																													<tr {$rowattrs} {$row_grid_3} class="{$rowclass}
+									{$gridFooter_class}
+					
+								r-gridrow
+							">
+									{BEGIN cellblock_grid_footcell_icons}
+	<td
+	
+	{$cell_grid_footcell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_icons}
+									{BEGIN cellblock_grid_footcell_checkbox}
+	<td
+	
+	{$cell_grid_footcell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_checkbox}
+									{BEGIN cellblock_grid_footcell_details}
+	<td
+	
+	{$cell_grid_footcell_details}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_details" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_details}
+									{BEGIN cellblock_grid_footcell_field}
+	<td
+	
+	{$cell_grid_footcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$locationId_class}	"
+
+	
+	data-cellId="grid_footcell_field" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="reservations_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field}
+									{BEGIN cellblock_grid_footcell_field1}
+	<td
+	
+	{$cell_grid_footcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$reservation_id_class}	"
+
+	
+	data-cellId="grid_footcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="reservations_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field1}
+									{BEGIN cellblock_grid_footcell_field2}
+	<td
+	
+	{$cell_grid_footcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$firstname_class}	"
+
+	
+	data-cellId="grid_footcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="reservations_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field2}
+									{BEGIN cellblock_grid_footcell_field3}
+	<td
+	
+	{$cell_grid_footcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$lastname_class}	"
+
+	
+	data-cellId="grid_footcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="reservations_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field3}
+									{BEGIN cellblock_grid_footcell_field4}
+	<td
+	
+	{$cell_grid_footcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$phone_class}	"
+
+	
+	data-cellId="grid_footcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="reservations_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field4}
+									{BEGIN cellblock_grid_footcell_field5}
+	<td
+	
+	{$cell_grid_footcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$mobile_class}	"
+
+	
+	data-cellId="grid_footcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="reservations_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field5}
+									{BEGIN cellblock_grid_footcell_field6}
+	<td
+	
+	{$cell_grid_footcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$zipcode_class}	"
+
+	
+	data-cellId="grid_footcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="reservations_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field6}
+									{BEGIN cellblock_grid_footcell_field7}
+	<td
+	
+	{$cell_grid_footcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$comments_class}	"
+
+	
+	data-cellId="grid_footcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="reservations_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field7}
+									{BEGIN cellblock_grid_footcell_field8}
+	<td
+	
+	{$cell_grid_footcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$treatmentId_class}	"
+
+	
+	data-cellId="grid_footcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="reservations_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field8}
+									{BEGIN cellblock_grid_footcell_field9}
+	<td
+	
+	{$cell_grid_footcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$rsvDate_class}	"
+
+	
+	data-cellId="grid_footcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="reservations_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field9}
+									{BEGIN cellblock_grid_footcell_field10}
+	<td
+	
+	{$cell_grid_footcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$rsvTime_class}	"
+
+	
+	data-cellId="grid_footcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="reservations_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field10}
+									{BEGIN cellblock_grid_footcell_field11}
+	<td
+	
+	{$cell_grid_footcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$rsvStatus_class}	"
+
+	
+	data-cellId="grid_footcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="reservations_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field11}
+									{BEGIN cellblock_grid_footcell_field12}
+	<td
+	
+	{$cell_grid_footcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$createdAt_class}	"
+
+	
+	data-cellId="grid_footcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="reservations_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field12}
+									{BEGIN cellblock_grid_footcell_field13}
+	<td
+	
+	{$cell_grid_footcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$updatedAt_class}	"
+
+	
+	data-cellId="grid_footcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="reservations_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field13}
+									{BEGIN cellblock_grid_footcell_field14}
+	<td
+	
+	{$cell_grid_footcell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$changesCount_class}	"
+
+	
+	data-cellId="grid_footcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="reservations_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field14}
+									{BEGIN cellblock_grid_footcell_field15}
+	<td
+	
+	{$cell_grid_footcell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$displayName_class}	"
+
+	
+	data-cellId="grid_footcell_field15" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="reservations_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field15}
+							</tr>
+					
+					</tfoot>
+				</table>
+{END grid_block}
+	
+			{BEGIN below-grid_outerblock}
+		<div class="panel-footer">
+			{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="leftbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="r-align-center r-ori-vert			col-md-12
+	
+">
+		 
+		{BEGIN pagination_block}
+<span data-itemtype="pagination" data-itemid="pagination" {$item_pagination} data-pageid="{$pageid}" >
+{$pagination}
+</span>
+{END pagination_block}
+		</div>					</div>
+			</div>		
+{END below-grid_block}
+		</div>
+	{END below-grid_outerblock}
+		</div>
+
+</div>
+
+
+
+
+										{$footer}
+				</div>
+			</div>
+			<div class="r-body-shadow">
+			</div>
+		</div>
+	{END body}
+	</body>
+</html>

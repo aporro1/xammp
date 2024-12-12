@@ -1,0 +1,819 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-edit" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="12"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="edit_header" data-itemid="edit_header" {$item_edit_header} data-pageid="{$pageid}" >{$pagetitlelabel reservationsReception edit}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="12"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<div data-itemtype="edit_message" data-itemid="edit_message" {$item_edit_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN message_back_button}
+			<button class="btn btn-sm btn-default" {$backbutton_attrs}>Πίσω στη λίστα</button>
+	{END message_back_button}
+{BEGIN message_view_page_button}
+		<a class="btn btn-sm btn-default" href="" {$view_page_button_attrs}>Προβολή</a>
+{END message_view_page_button}
+</div>
+</div>
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="4"
+		
+		data-v-width="12"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c6}
+<td
+	{$cell_grid_c6}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c6" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN firstname_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_firstname}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="firstname{$id}" {$required_attr_firstname}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="firstname" data-fieldname="firstname" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_firstname}">
+		{BEGIN firstname_label}{$label reservationsReception firstname }{END firstname_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$firstname_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="firstname" {$tooltipAttr reservationsReception firstname } >
+		<div class="text-muted" >
+		{$tooltip reservationsReception firstname }		</div>
+	</div>
+</div>
+
+
+{END firstname_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c6}
+			 
+																
+
+{BEGIN cellblock_grid_c7}
+<td
+	{$cell_grid_c7}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c7" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN lastname_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_lastname}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="lastname{$id}" {$required_attr_lastname}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="lastname" data-fieldname="lastname" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_lastname}">
+		{BEGIN lastname_label}{$label reservationsReception lastname }{END lastname_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$lastname_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="lastname" {$tooltipAttr reservationsReception lastname } >
+		<div class="text-muted" >
+		{$tooltip reservationsReception lastname }		</div>
+	</div>
+</div>
+
+
+{END lastname_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c7}
+			 
+																
+
+{BEGIN cellblock_grid_c8}
+<td
+	{$cell_grid_c8}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c8" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN zipcode_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_zipcode}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="zipcode{$id}" {$required_attr_zipcode}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="zipcode" data-fieldname="zipcode" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_zipcode}">
+		{BEGIN zipcode_label}{$label reservationsReception zipcode }{END zipcode_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$zipcode_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="zipcode" {$tooltipAttr reservationsReception zipcode } >
+		<div class="text-muted" >
+		{$tooltip reservationsReception zipcode }		</div>
+	</div>
+</div>
+
+
+{END zipcode_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c8}
+			 
+																
+
+{BEGIN cellblock_grid_c9}
+<td
+	{$cell_grid_c9}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c9" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN phone_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_phone}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="phone{$id}" {$required_attr_phone}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="phone" data-fieldname="phone" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_phone}">
+		{BEGIN phone_label}{$label reservationsReception phone }{END phone_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$phone_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="phone" {$tooltipAttr reservationsReception phone } >
+		<div class="text-muted" >
+		{$tooltip reservationsReception phone }		</div>
+	</div>
+</div>
+
+
+{END phone_fieldblock}
+											
+{BEGIN mobile_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_mobile}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="mobile{$id}" {$required_attr_mobile}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="mobile" data-fieldname="mobile" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_mobile}">
+		{BEGIN mobile_label}{$label reservationsReception mobile }{END mobile_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$mobile_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="mobile" {$tooltipAttr reservationsReception mobile } >
+		<div class="text-muted" >
+		{$tooltip reservationsReception mobile }		</div>
+	</div>
+</div>
+
+
+{END mobile_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c9}
+								</tr>
+	 
+	 
+														<tr {$row_grid_1} >
+										
+
+{BEGIN cellblock_grid_c10}
+<td
+	{$cell_grid_c10}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c10" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN rsvDate_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_rsvDate}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="rsvDate{$id}" {$required_attr_rsvDate}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="rsvDate" data-fieldname="rsvDate" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_rsvDate}">
+		{BEGIN rsvDate_label}{$label reservationsReception rsvDate }{END rsvDate_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$rsvDate_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="rsvDate" {$tooltipAttr reservationsReception rsvDate } >
+		<div class="text-muted" >
+		{$tooltip reservationsReception rsvDate }		</div>
+	</div>
+</div>
+
+
+{END rsvDate_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c10}
+			 
+																
+
+{BEGIN cellblock_grid_c11}
+<td
+	{$cell_grid_c11}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c11" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN rsvTime_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_rsvTime}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="rsvTime{$id}" {$required_attr_rsvTime}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="rsvTime" data-fieldname="rsvTime" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_rsvTime}">
+		{BEGIN rsvTime_label}{$label reservationsReception rsvTime }{END rsvTime_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$rsvTime_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="rsvTime" {$tooltipAttr reservationsReception rsvTime } >
+		<div class="text-muted" >
+		{$tooltip reservationsReception rsvTime }		</div>
+	</div>
+</div>
+
+
+{END rsvTime_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c11}
+			 
+																
+
+{BEGIN cellblock_grid_c12}
+<td
+	{$cell_grid_c12}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c12" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN rsvStatus_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_rsvStatus}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="rsvStatus{$id}" {$required_attr_rsvStatus}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="rsvStatus" data-fieldname="rsvStatus" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_rsvStatus}">
+		{BEGIN rsvStatus_label}{$label reservationsReception rsvStatus }{END rsvStatus_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$rsvStatus_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="rsvStatus" {$tooltipAttr reservationsReception rsvStatus } >
+		<div class="text-muted" >
+		{$tooltip reservationsReception rsvStatus }		</div>
+	</div>
+</div>
+
+
+{END rsvStatus_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c12}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c13}
+<td
+	{$cell_grid_c13}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c13" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c13}
+								</tr>
+	 
+	 
+														<tr {$row_grid_2} >
+										
+
+{BEGIN cellblock_grid_c14}
+<td
+	{$cell_grid_c14}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c14" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN locationId_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_locationId}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="locationId{$id}" {$required_attr_locationId}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="locationId" data-fieldname="locationId" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_locationId}">
+		{BEGIN locationId_label}{$label reservationsReception locationId }{END locationId_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$locationId_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="locationId" {$tooltipAttr reservationsReception locationId } >
+		<div class="text-muted" >
+		{$tooltip reservationsReception locationId }		</div>
+	</div>
+</div>
+
+
+{END locationId_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c14}
+			 
+																
+
+{BEGIN cellblock_grid_c15}
+<td
+	{$cell_grid_c15}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c15" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN treatmentId_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_treatmentId}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="treatmentId{$id}" {$required_attr_treatmentId}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="treatmentId" data-fieldname="treatmentId" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_treatmentId}">
+		{BEGIN treatmentId_label}{$label reservationsReception treatmentId }{END treatmentId_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$treatmentId_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="treatmentId" {$tooltipAttr reservationsReception treatmentId } >
+		<div class="text-muted" >
+		{$tooltip reservationsReception treatmentId }		</div>
+	</div>
+</div>
+
+
+{END treatmentId_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c15}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c16}
+<td
+	{$cell_grid_c16}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c16" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c16}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c17}
+<td
+	{$cell_grid_c17}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c17" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c17}
+								</tr>
+	 
+	 
+														<tr {$row_grid_3} >
+										
+
+{BEGIN cellblock_grid_c18}
+<td
+	{$cell_grid_c18}
+	class=" r-ori-vert"
+	
+			data-single
+				data-fullwidth
+		
+	ocolspan="4"		data-cellId="grid_c18" data-pageid="{$pageid}"
+		data-v-cell="12"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN comments_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_comments}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="comments{$id}" {$required_attr_comments}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="comments" data-fieldname="comments" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_comments}">
+		{BEGIN comments_label}{$label reservationsReception comments }{END comments_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$comments_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="comments" {$tooltipAttr reservationsReception comments } >
+		<div class="text-muted" >
+		{$tooltip reservationsReception comments }		</div>
+	</div>
+</div>
+
+
+{END comments_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c18}
+								</tr>
+	 
+	 
+														<tr {$row_grid_4} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN createdAt_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_createdAt}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="createdAt{$id}" {$required_attr_createdAt}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="createdAt" data-fieldname="createdAt" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_createdAt}">
+		{BEGIN createdAt_label}{$label reservationsReception createdAt }{END createdAt_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$createdAt_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="createdAt" {$tooltipAttr reservationsReception createdAt } >
+		<div class="text-muted" >
+		{$tooltip reservationsReception createdAt }		</div>
+	</div>
+</div>
+
+
+{END createdAt_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+			 
+																
+
+{BEGIN cellblock_grid_c}
+<td
+	{$cell_grid_c}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN updatedAt_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_updatedAt}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="updatedAt{$id}" {$required_attr_updatedAt}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="updatedAt" data-fieldname="updatedAt" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_updatedAt}">
+		{BEGIN updatedAt_label}{$label reservationsReception updatedAt }{END updatedAt_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$updatedAt_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="updatedAt" {$tooltipAttr reservationsReception updatedAt } >
+		<div class="text-muted" >
+		{$tooltip reservationsReception updatedAt }		</div>
+	</div>
+</div>
+
+
+{END updatedAt_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c}
+			 
+																
+
+{BEGIN cellblock_grid_c4}
+<td
+	{$cell_grid_c4}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c4" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN changesCount_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_changesCount}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="changesCount{$id}" {$required_attr_changesCount}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="changesCount" data-fieldname="changesCount" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_changesCount}">
+		{BEGIN changesCount_label}{$label reservationsReception changesCount }{END changesCount_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$changesCount_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="changesCount" {$tooltipAttr reservationsReception changesCount } >
+		<div class="text-muted" >
+		{$tooltip reservationsReception changesCount }		</div>
+	</div>
+</div>
+
+
+{END changesCount_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c4}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c5}
+<td
+	{$cell_grid_c5}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c5" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c5}
+								</tr>
+	 
+	 
+																</tbody></table>
+				
+{BEGIN details_statushistory}
+<div data-itemtype="details_preview" data-itemid="details_preview" {$item_details_preview} data-pageid="{$pageid}" class="bs-details"> 
+	<div class="panel panel-info details-grid">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+							{$details_pagetitle_statushistory}			
+							<span>
+					{$detailslButtons_statushistory}
+																				</span>
+			</h4>
+		</div>
+		<div class="panel-body">
+			{$displayDetailTable_statushistory}
+		</div>
+	</div>
+</div>
+{END details_statushistory}
+	
+				{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="12"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN save_edit}
+<span data-itemtype="edit_save" data-itemid="edit_save" {$item_edit_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Αποθήκευση			</a>
+</span>
+{END save_edit}
+	 
+		{BEGIN save_update}
+<span data-itemtype="update_records" data-itemid="update_records" {$item_update_records} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+				 
+			{$update_records_label}	
+			</a>
+</span>
+{END save_update}
+	 
+		{BEGIN back_button}
+<span data-itemtype="edit_back_list" data-itemid="edit_back_list" {$item_edit_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Πίσω στη λίστα			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="edit_close" data-itemid="edit_close" {$item_edit_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$closebutton_attrs} >
+							Ακύρωση			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-menu-hamburger"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="edit_reset" data-itemid="edit_reset" {$item_edit_reset} data-pageid="{$pageid}" data-small >
+				<a  {$resetbutton_attrs}  title="" >
+				
+		Επαναφορά		
+		</a>
+	</li>
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>
