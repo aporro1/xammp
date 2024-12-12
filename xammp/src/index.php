@@ -28,7 +28,7 @@
     ?>
 
     <!-- Demonstrating PHP if statement -->
-    <?phpwhat should i put in the source directory as a test
+    <?php
         $hour = date('H');
         if ($hour < 12) {
             echo "<p>Good morning!</p>";
