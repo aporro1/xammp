@@ -1,32 +1,19 @@
 FROM php:8.2-apache
 
-# Install PDO extensions for MySQL connectivity
+# Install PHP extensions needed for MySQL connectivity
 RUN docker-php-ext-install pdo pdo_mysql
 
-# Print detailed information about the build environment before copy
-RUN echo "====== Build Environment Information ======" && \
-    echo "Current working directory:" && \
-    pwd && \
-    echo "\nDirectory structure:" && \
-    find . -maxdepth 3 -type d && \
-    echo "\nContents of current directory:" && \
-    ls -la . && \
-    echo "\nAttempting to check src directory:" && \
-    if [ -d "./src" ]; then \
-        echo "src directory exists, contents:" && \
-        ls -la ./src; \
-    else \
-        echo "WARNING: src directory not found in build context"; \
-    fi
+# The WORKDIR instruction sets the working directory for subsequent instructions
+# and also creates the directory if it doesn't exist
+WORKDIR /var/www/html
 
-# Copy the source files
+# Copy application files into the container
+# This copies everything from your src directory into /var/www/html
 COPY ./src/ /var/www/html/
 
-# Verify the copy operation
-RUN echo "====== Verification After Copy ======" && \
-    echo "Contents of /var/www/html:" && \
-    ls -la /var/www/html && \
-    echo "\nFile ownership and permissions:" && \
-    ls -ln /var/www/html && \
-    echo "\nDirectory structure in web root:" && \
-    find /var/www/html -type f
+# Set proper permissions for Apache
+RUN chown -R www-data:www-data /var/www/html && \
+    chmod -R 755 /var/www/html
+
+# Apache configuration and startup command remain the same
+CMD ["apache2-foreground"]
